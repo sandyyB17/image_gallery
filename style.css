@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2em;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+.filters {
+  margin-bottom: 1.5em;
+}
+
+.filters button {
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filters button.active,
+.filters button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
